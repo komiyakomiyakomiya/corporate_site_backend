@@ -2,7 +2,7 @@
 	"dockerComposeFile": [
 		"../docker-compose.yml" // docker-compose.ymlの相対パス
 	],
-	"name": "fastapi_mysql_api", // コンテナ名
+	"name": "corporate_site_api", // コンテナ名
 	"service": "api", // サービス名
 	"workspaceFolder": "/usr/src/app/", // VSCode上に展開するコンテナ内のディレクトリを指定
 	// "settings": { // コンテナ内に追加するVS Codeの設定

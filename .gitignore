@@ -1,0 +1,12 @@
+.DS_Store
+.env.dev
+mysqld.log
+_*.md
+
+__pycache__/
+.history/
+.venv/
+docker/db/data/
+log/
+node_modules/
+pytest_cache/
