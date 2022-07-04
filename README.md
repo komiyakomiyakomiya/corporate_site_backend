@@ -49,6 +49,17 @@ docker-compose down -v
 docker-compose up
 ```
 
+
+# DB の変更
+
+1. models/*.pyを変更
+2. (新規テーブル`xxxx.py`を作成した場合は、`db/migrations/env.py` に`import models.xxxx` を追記)
+3. docker exec -it corporate_site_api bash
+4. cd /usr/src/app/db 
+5. alembic revision --autogenerate -m 'メッセージ'
+6. alembic upgrade head
+
+
 # DB 接続
 
 ```sh

@@ -7,8 +7,11 @@ from alembic import context
 import database
 # modesls.* はコードないで使わないが、importしないとdatabase.Baseのmetadataにモデルが登録されず、
 # alembicでmigrationファイルを作成した際に認識されないので注意
-import models.user
-import models.book
+import models.department
+import models.employee
+import models.tag
+import models.work
+import models.work_tag
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
